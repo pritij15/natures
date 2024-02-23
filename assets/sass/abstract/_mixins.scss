@@ -1,0 +1,14 @@
+@mixin atCenter{
+    display : flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin lg($direction, $color...){
+    background-image: linear-gradient($direction, $color);
+}
+
+@mixin backgroundClip {
+    background-clip: text;
+    color:transparent;
+}
