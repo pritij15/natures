@@ -10,6 +10,15 @@
     display : inline-block;
     @include backgroundClip;
     transition: all .4s ease-in-out;
+//     @include responsive-phone {
+//     font-size: 24px;
+//     color:red !important;
+// }
+
+    @include responsive(phone){
+        // font-size:24px;
+        // color:red !important;
+    }
 
     &:hover, &:focus, &:active{
         transform : scale(1.1);
@@ -20,9 +29,23 @@
     text-transform: uppercase;
     font-size: 1rem;
     margin-bottom: 1.25rem;
+    // @include responsive-phone{
+    //     color:yellow;
+    //     font-size: 10px;
+    // }
+    @include responsive(tabport){
+        // font-size: 20px;
+        // color:blue;
+    }
 }
 .para{
     font-size: 1rem;
     margin-bottom: 1.875rem;
 }
 
+// @media all and(max-width:600px){
+//     .pri-heading{
+//         font-size: 24px;
+//         color:red !important;
+//     }
+// }
